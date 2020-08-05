@@ -1,0 +1,88 @@
+/* Style the links inside the sidenav */
+.nksb-sidebar {
+	z-index:20;
+	position: fixed;
+	right: 10%;
+	top: 70%;
+  text-align: right;
+}
+
+.nksb-sidebar ul {
+	list-style: none;
+	margin:0;
+  padding:0;
+  max-width: 75px;
+}
+
+.nksb-sidebar ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nksb-sidebar i {
+	background: transparent;
+	box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  margin: -20px;
+  text-decoration: none;
+  color:black; /*Color of the Icon*/
+  position: absolute;
+    z-index: 20;
+    right: 15px;
+    bottom: 15px;
+    font-size: 26px !important;
+    text-align: center;
+    line-height: 28px !important;
+}
+
+.nksb-sidebar ul li {
+ background: whitesmoke;
+  padding: 0px;
+  width: auto;
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.nksb-sidebar ul li a{
+  position: relative;
+  display: block;
+  min-width: 27px;
+  padding: 15px;
+}
+
+.nksb-sidebar ul span {
+  position: relative;
+  z-index: 20;
+  white-space: nowrap;
+  margin-right: 26px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  visibility: none;
+  width: auto;
+  max-width:0px;
+  opacity: 0;
+  text-align: center;
+  transition:all 0.5s;
+  box-sizing:border-box;
+  padding-right:0px;
+  text-decoration:none;
+  color:black;
+}
+
+.nksb-sidebar li:hover {
+  cursor: pointer;
+}
+
+.nksb-sidebar li:hover span {
+	margin-right:0px;
+  opacity: 1;
+  width: auto;
+  max-width:500px; /* this value makes the transition */
+  padding-right:38px;
+}
